@@ -1,0 +1,42 @@
+/* max-width: 100%;
+            max-height: 100%; */
+* {
+    box-sizing: border-box;
+    background-color: lightblue;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-flow: center;
+    /* background-color: grey;
+    border: 2px solid powderblue; */
+
+    /* width: 1336px;
+    height: 768px; */
+}
+
+#banner {
+    width: 1100px;
+    height: 250px;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+main {
+    margin: auto;
+    width: 80%;
+    border: 3px solid green;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+ul {
+    list-style-type: none;
+}
