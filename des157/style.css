@@ -1,9 +1,83 @@
 /* max-width: 100%;
             max-height: 100%; */
 * {
-    box-sizing: border-box;
-    background-color: lightblue;
+    /* box-sizing: border-box; */
+    background-color: #00171F;
+    color: white;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-flow: space-around;
+    text-align: center;
+    padding: 2px;   
+}
+
+.fireflies {
+    background-color: lightgoldenrodyellow;
+    border-radius: 50%;
+    opacity: 0.8;
+
+    padding-top: 1px;
+    width: 20px;
+    height: 20px;
+    /* animation: flicker 2s ease alternate infinite; */
+}
+
+.fireflies:hover {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    transition: 1s;
+}
+
+.bug1 {
+  /* animation-name: flicker;
+  animation-duration: 4s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite; */
+  animation: flicker 3s ease alternate infinite;
+}
+
+.bug2 {
+    /* animation-name: flicker;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite; */
+    animation: flicker 4s ease alternate infinite;
+  }
+
+.bug3 {
+    animation: flicker 5s ease alternate infinite;
+  }
+  
+.bug4 {
+    animation: flicker 6s ease alternate infinite;
+  }
+
+.bug5 {
+    animation: flicker 5s ease alternate infinite;
+  }
+
+.bug6 {
+    /* position: absolute; */
+    animation: flicker 4s ease alternate infinite;
+    /* top: 100px; */
+}
+
+
+@keyframes flicker {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+
+
 
 body {
     display: flex;
@@ -19,24 +93,46 @@ body {
 #banner {
     width: 1100px;
     height: 250px;
+    background-color: black;
+    width: 80%;
+    opacity: 80%;
+    margin: auto;
+    display: flex;
+    justify-content:space-around; 
 }
 
 a:link {
     text-decoration: none;
-
+    /* color: thistle; */
 }
 
 main {
     margin: auto;
     width: 80%;
-    border: 3px solid green;
+    /* border: 3px solid green; */
     padding: 10px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content:space-around; 
 
+}
+
+footer {
+    padding-top: 10px;
+    display: flex;
+    justify-content:space-around; 
 }
 
 ul {
     list-style-type: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.column1 .column2 .cloumn3 {
+
+    text-align: center;
 }
