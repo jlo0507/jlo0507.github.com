@@ -4,6 +4,19 @@
     color: white;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 2px;
+}
+
+h2 {
+    /* titles are different colors to stand out more */
+    color:blanchedalmond;
+}
+
 #name {
     /* CSS elements on my name's text */
     max-width: 900px;
@@ -16,16 +29,7 @@
     color: #FFE45C;
     transform: scale(1.5);
     transition: 1.5s;
-} 
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    padding: 2px;
 }
-
 
 .fireflies {
     /* general CSS style for all the fireflies */
@@ -225,11 +229,6 @@ a:link {
     background-color: #FFE45C;
     padding:4px 4px;
     transition: 0.3s;
-}
-
-h2 {
-    /* titles are different colors to stand out more */
-    color:blanchedalmond;
 }
 
 .column1 .column2 .cloumn3 {
