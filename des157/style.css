@@ -12,23 +12,23 @@ header {
     padding: 2px;
 }
 
-h2 {
-    /* titles are different colors to stand out more */
-    color:blanchedalmond;
-}
-
-#name {
+h1 {
     /* CSS elements on my name's text */
     max-width: 900px;
     margin: auto;
     transition:1s;
 }
 
-#name:hover {
+h1:hover {
     /* Enlarge my name when hovering over */
-    color: #FFE45C;
     transform: scale(1.5);
     transition: 1.5s;
+    color: yellow;
+}
+
+h2 {
+    /* titles are different colors to stand out more */
+    color:blanchedalmond;
 }
 
 .fireflies {
@@ -228,12 +228,14 @@ a:link {
     color: #00171F;
     background-color: #FFE45C;
     padding:4px 4px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .column1 .column2 .cloumn3 {
     text-align: center;
+    transition: 0.5s;
 }
+
 
 footer {
     padding-top: 10px;
@@ -249,11 +251,13 @@ footer {
     color: #DBEBC0;
     font-size: 20px;
     font-style: oblique;
+    transition: 1s;
 }
 
 .footer_texts:hover { 
     /* a color shade for hovering over footer notes */
-    transition: .5s;
-    color:yellow;
+    transition: 1.5s;
+    transform: scale(1.3);
+    color: yellow;
     opacity: 100%;
 }
