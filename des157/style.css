@@ -4,12 +4,14 @@
 }
 
 #name {
+    /* CSS elements on my name's text */
     max-width: 900px;
     margin: auto;
     transition:1s;
 }
 
 #name:hover {
+    /* Enlarge my name when hovering over */
     color: #FFE45C;
     transform: scale(1.5);
     transition: 1.5s;
@@ -25,6 +27,7 @@ header {
 
 
 .fireflies {
+    /* general CSS style for all the fireflies */
     background-color: lightgoldenrodyellow;
     border-radius: 50%;
     opacity: 0.8;
@@ -44,12 +47,13 @@ header {
     width: 1100px;
     height: 250px;
     background-color: black;
-    width: 80%;
     opacity: 80%;
     margin: auto;
     display: flex;
     justify-content: space-around;
 }
+
+/* Each bug has their own position and flickering timing */
 
 #bug1 {
     top: 72%;
@@ -162,6 +166,7 @@ header {
     animation: flicker 4.2s ease alternate infinite;
 }
 
+/* a bug "flicker" by changing it's brightness */
 @keyframes flicker {
     0% {
         opacity: 0;
@@ -172,6 +177,7 @@ header {
 }
 
 .fireflies:hover {
+    /* Enlarge a bug when it's hover over */
     background-color: #FFFF00;
     transition: 1.3s;
     opacity: 100%;
@@ -182,10 +188,6 @@ body {
     display: flex;
     flex-direction: column;
     flex-flow: center;
-    /* background-color: grey;
-    border: 2px solid powderblue; */
-    /* width: 1336px;
-    height: 768px; */
 }
 
 main {
@@ -206,16 +208,17 @@ a {
 }
 
 a:link {
-    text-decoration: none;
     /* turning on display block so I can add margin-bottom for more breathability in the interface.
     If I put the margin-bottom on the <li> I would not need the display:block on the a tag since <li> is a
     block-level tag already */
     display: block;
+    text-decoration: none;
     margin-bottom: 1px;
     opacity: 70%;
 }
 
 .column1 a:hover, .column2 a:hover, .column3 a:hover{
+    /* change only the background color for the project links so the footer's links won't be highlighted */
     opacity: 100%;
     color: #00171F;
     background-color: #FFE45C;
@@ -224,7 +227,7 @@ a:link {
 }
 
 h2 {
-    /* titles are different colors from link text*/
+    /* titles are different colors to stand out more */
     color:blanchedalmond;
 }
 
@@ -249,6 +252,7 @@ footer {
 }
 
 .footer_texts:hover { 
+    /* a color shade for hovering over footer notes */
     transition: .5s;
     color:yellow;
     opacity: 100%;
