@@ -60,7 +60,7 @@ header {
     left: 8%;
     width: 10px;
     height: 10px;
-    animation: flicker 4.9s ease alternate infinite;
+    animation: flicker 3.4s ease alternate infinite;
 }
 
 #bug2 {
@@ -68,7 +68,7 @@ header {
     left: 10%;
     width: 8px;
     height: 8px;
-    animation: flicker 4.9s ease alternate infinite;
+    animation: flicker 2.9s ease alternate infinite;
 }
 
 #bug3 {
@@ -84,7 +84,7 @@ header {
     left: 20%;
     width: 7px;
     height: 7px;
-    animation: flicker 5.5s ease alternate infinite;
+    animation: flicker 4.5s ease alternate infinite;
 }
 
 #bug5 {
@@ -92,7 +92,7 @@ header {
     left: 27%;
     width: 12px;
     height: 12px;
-    animation: flicker 4.6s ease alternate infinite;
+    animation: flicker 4.9s ease alternate infinite;
 }
 
 #bug6 {
@@ -108,7 +108,7 @@ header {
     left: 42%;
     width: 14px;
     height: 14px;
-    animation: flicker 4.6s ease alternate infinite;
+    animation: flicker 2.6s ease alternate infinite;
 }
 
 #bug8 {
@@ -147,7 +147,7 @@ header {
     left: 80%;
     width: 9px;
     height: 9px;
-    animation: flicker 4.7s ease alternate infinite;
+    animation: flicker 2.7s ease alternate infinite;
 }
 
 #bug13 {
