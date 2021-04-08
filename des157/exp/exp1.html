@@ -10,7 +10,38 @@
     <h1>Experiment 1</h1>
     <h2>please press key *fn* and *f12* to open the console </h2>
     <script>
+        /* 
+            I choose to implement the reverse words in a string experiment!
+            
+            First, I prompt the user for a sentence or word, 
+            with at least two characters to be reversed.
 
+            Then, .split() the sentence by space and use a temperary varaible
+            to store each word from ending index to starting index.
+
+            Finally, add the reversed word to a new array of words and
+            print the "magic" output to console log!
+        
+        */
+
+        var magicOutput = "";
+        var userInput = prompt("Give me a sentence to turn around magically:", "");
+        if (userInput.length < 2) {
+            console.log("umm... it has to be at least two characters long!")
+        } 
+        else {
+                var inputSplitBySpace = userInput.split(" ");
+            for (var i = 0; i < inputSplitBySpace.length; i++) {
+                var origWord = inputSplitBySpace[i];
+                var newWord = "";
+                for (var j = origWord.length - 1; j >= 0; j--){
+                    newWord += origWord[j];
+                }
+                origWord = newWord;
+                magicOutput += origWord + " ";
+            }
+            console.log("the magic happens here: ", magicOutput);
+        }
     </script>
 </body>
 </html>
