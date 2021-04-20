@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="exp2.css">
+    <title>Experiement 2</title>
+</head>
+<body>
+    <header>
+        <h1>Experiment 2: Release Your Fireflies</h1>
+    </header>
+
+    <div id="container">
+        <div class="fireflies" id="oreos"></div>
+        <div class="fireflies" id="boba"></div>
+        <div class="fireflies" id="macaroon"></div>
+        <div class="fireflies" id="tiramisu"></div>
+        <div class="fireflies" id="cheetos"></div>
+        <div class="fireflies" id="strawberry"></div>
+    </div>
+
+    <button id="releaseButton">release a firefly?</button>
+
+    <footer>
+        <a href="https://jlo0507.github.io/des157/">portal</a>
+        <a href="https://validator.w3.org/check?uri=https://jlo0507.github.io/des157/exp/exp2.html">valid html 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://jlo0507.github.io/des157/exp/exp2.css">valid css</a>
+        <a href="mailto:&#104;&#117;&#108;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">contact me</a>
+    </footer>
+
+    <script>
+        /*
+            My Experiement 2 allows user to release fireflies from a "bottle".
+            
+            How it works:
+
+            1) The user is first prompt to choose their favorite color 
+            to be their bottle for the fireflies.
+            (Note: This color must be css background-color capatible)
+
+            2) Then, the user can click on the button to release a firefly. 
+            (Note: See console for additional note after a firefly is released)
+
+            3) When all the fireflies are released, the button no longer create
+            more interaction/event/changes!
+
+            Codes that meet Experiement 2 grading rubric:
+            1. Use of prompt [Done on line]
+            2. Use of variables and array [Done on line]
+            3. Use of flow control structures [Done on line]
+            4. Use of function return data in another function [Done on line]
+
+        */
+
+        // start experiment 2 by prompting for a user input color
+        var bg_color = prompt("what's your favorite css background-color?", "lightsteelblue");
+        var bug_count = ["oreos", "boba", "macaroon", "tiramisu", "cheetos", "strawberry"];
+        var btn = document.querySelector('button');
+
+        // set the default container and button color to the user's input color
+        document.getElementById("container").style.backgroundColor = bg_color;
+        // document.getElementById("releaseButton").style.backgroundColor = bg_color;
+
+        // a side function with returned value used in OnClick event later
+        function getRandomInt(size) {
+            return Math.floor(Math.random() * size);
+        }
+
+        // eventListener action when user clicks the button to release a bug
+        btn.addEventListener('click', function(){
+            // if no more bug can be released, change text and color + no more interaction allowed
+            if (bug_count.length < 1) {
+                document.getElementById("releaseButton").textContent = "You released them all! Thx :)";
+                document.getElementById("releaseButton").style.backgroundColor = "steelblue";
+            } 
+            // otherwise, allow user to see bugs disppearing and notes in console.log
+            else {
+                var ind = getRandomInt(bug_count.length);
+                var released_bug = bug_count[ind];
+                document.getElementById(released_bug).style.backgroundColor = bg_color;
+                bug_count.splice(ind, 1);
+                console.log(`You released ${released_bug}! Thank you :)`);
+            }
+        });
+
+    </script>
+</body>
+</html>

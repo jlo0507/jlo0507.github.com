@@ -1,0 +1,137 @@
+*{
+    background-color: #00171F;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    margin: auto;
+    color: white;
+}
+
+#container div {
+    position: absolute;
+}
+
+#container{
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightsteelblue;
+    /* opacity: 50%; */
+    width: 30%;
+    height: 500px;
+}
+
+.fireflies{
+    background-color: lightgoldenrodyellow;
+    border-radius: 50%;
+    /* opacity: 0.8;
+    padding-top: 1px; 
+    transition:1s;    */
+
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#oreos{
+    width: 18px;
+    height: 18px;
+    top: 64%;
+    left: 17%;
+    animation: flicker 4.5s ease alternate infinite;
+
+}
+#boba{
+    width:27px;
+    height:27px;
+    top: 24%;
+    left: 20%;
+    animation: flicker 6.1s ease alternate infinite;
+
+}
+#macaroon{
+    width:13px;
+    height:13px;
+    top: 47%;
+    left: 55%;    
+    animation: flicker 3.3s ease alternate infinite;
+
+}
+#tiramisu{
+    width:19px;
+    height:19px;
+    top: 86%;
+    left: 48%;
+    animation: flicker 5.1s ease alternate infinite;
+
+}
+#cheetos{
+
+    width:24px;
+    height:24px;
+    top: 54%;
+    left: 89%;
+    animation: flicker 4.4s ease alternate infinite;
+
+}
+#strawberry{
+
+    width:14px;
+    height:14px;
+    top: 14%;
+    left: 67%;
+    animation: flicker 2.2s ease alternate infinite;
+
+}
+
+#releaseButton{
+    margin: auto;
+    margin-top: 1%;
+    width: 20%;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 24px;
+    text-align: center;
+    background-color: lightgray;
+    color: #00171F;
+}
+
+#releaseButton:hover{
+    background-color: lightgoldenrodyellow;
+    color:#00171F;
+}
+
+#releaseButton:active{
+    background-color: rgb(206, 172, 61);
+}
+
+footer {
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke; 
+}
+
+a:hover {
+  text-decoration: underline;
+  color: lightgoldenrodyellow;
+}
