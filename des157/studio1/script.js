@@ -4,7 +4,9 @@
 
     const surveyForm = document.querySelector('#survey');
     const madlib = document.querySelector('#result');
+    const closeBtns = document.querySelectorAll('.close-overlay-button');
     let selectedStyle = document.querySelector('#musicStyle');
+    document.getElementById(selectedStyle.value).className = 'overlay hidden';
     
     // submit button should trigger the overlay window
     surveyForm.addEventListener('submit', function(event){
@@ -76,4 +78,11 @@
         document.getElementById(selectedStyle.value).className = 'overlay hidden';
     });
     
+    // triggered when user wants to hide th 
+    for (const eachBtn of closeBtns) {
+        eachBtn.addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById(selectedStyle.value).className = 'overlay hidden';
+        });
+    }
 }());
