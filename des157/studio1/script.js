@@ -26,7 +26,6 @@
         for (let field of formData){
             if (field.value){
                 wordsList.push(field.value);
-                console.log(`the input is ${field.value}`);
             } 
             else{
                 emptyFields++;
@@ -42,7 +41,6 @@
             // clear all the fields if user enters all the fields!
             
             makeMadlib(wordsList);
-            console.log(wordsList[0]);
             for (let field of formData) {
                 field.value = "";
             }
@@ -75,9 +73,7 @@
     // triggered when user close the overlay button to create their next song
     document.querySelector('.close-overlay-button').addEventListener('click', function (event) {
         event.preventDefault();
-        console.log(selectedStyle.value);
         document.getElementById(selectedStyle.value).className = 'overlay hidden';
-        console.log("hello");
     });
     
 }());
