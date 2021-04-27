@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>MadLibs 2.0</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>MadLibs 2.0</h1>
+    </header>
+    <main>
+        <div id="form-container">
+            <section id="left-column">
+                <button id="page-title">MadLibsify</button>
+                <form id="player-info">
+                    <label for="info1">artist name</label>
+                    <input type="text" id="info1">
+        
+                    <label for="info2">song name</label>
+                    <input type="text" id="info2">
+
+                    <label for="info3">music style</label>
+                    <select name="album-styles" id="musicStyle">
+                      <option value="barbie">popping</option>
+                      <option value="hadestown">orchestra</option>
+                      <option value="greatest-showman">dance</option>
+                      <option value="wicked">disco</option>
+                    </select>
+                </form>
+                
+            </section>
+                
+            <section id="middle-column">
+                <form id="survey">
+                    <label for="adj1">word to describe you</label>
+                    <input type="text" id="adj1">
+        
+                    <label for="noun1">a person you like</label>
+                    <input type="text" id="noun1">
+        
+                    <label for="noun2">one thing you own </label>
+                    <input type="text" id="noun2">
+        
+                    <label for="verb1">what you always do</label>
+                    <input type="text" id="verb1">
+
+                    <label for="noun3">a hobby you have</label>
+                    <input type="text" id="noun3">
+        
+                </form>
+            </section>
+
+            <section id="right-column">
+                <button type="submit" form="survey" id="submitButton">WRITE A SONG</button>
+                <article id="result">
+                </article>
+            </section>
+        </div>
+        
+        <section id="barbie" class="overlay hidden">
+            <article>
+                <div class="overlay-left-col">
+                    <img class="profile-pic" src="./assets/barbie.png" alt="profile">
+                    <button class="close-overlay-button">NEXT SONG</button>
+                </div>
+                <div class="overlay-right-col">
+                    <h1 class="song-name" id="barbie-song-name">Song Name</h1>
+                    <h2 class="artist-name" id="barbie-artist-name">Artist Name</h2>
+                    <p class="overlay-text">
+                        If I'd like to have my breakfast hot <br>
+                        Madame <span class="sub" id="barbie-noun1">Carp</span> will make me <span class="sub" id="barbie-verb1">pay</span>, <br>
+                        And I have to fetch the <span class="sub" id="barbie-noun2">eggs</span> myself<br>
+                        And the barn's a mile away.<br>
+                        It's cold and wet<br>
+                        But still I get a(n) <span class="sub" id="barbie-noun3">omelette</span> on my plate,<br>
+                        But in my head I'm back in bed<br>
+                        <span class="sub" id="barbie-adj1">Snuggled up</span> and sleeping late<br>
+                    </p>
+                </div>
+                
+            </article>
+        </section>
+    
+        <section id="hadestown" class="overlay hidden">
+            <article>
+                <div class="overlay-left-col">
+                    <img class="profile-pic" src="./assets/hadestown.png" alt="profile">
+                    <button class="close-overlay-button">NEXT SONG</button>
+                </div>
+                <div class="overlay-right-col">
+                    <h1 class="song-name" id="hadestown-song-name">Song Name</h1>
+                    <h2 class="artist-name" id="hadestown-artist-name">Artist Name</h2>
+                    <p class="overlay-text">
+                        The meanest dog you'll ever meet <br>
+                        He ain't the hound dog in the street<br>
+                        He bares some teeth and tears some skin<br>
+                        But <span class="sub" id="hadestown-noun1">brother</span>, that's the <span class="sub" id="hadestown-adj1">worst</span> of him<br>
+                        The dog you really got to dread<br>
+                        Is the one that <span class="sub" id="hadestown-verb1">howls</span> inside your <span class="sub" id="hadestown-noun2">head</span><br>
+                        It's him whose <span class="sub" id="hadestown-noun3">howling</span> drives men mad<br>
+                        And a mind to its undoing<br>
+                    </p>
+                </div>
+                
+            </article>
+
+        </section>
+
+        <section id="greatest-showman" class="overlay hidden">
+            <article>
+                <div class="overlay-left-col">
+                    <img class="profile-pic" src="./assets/greatest-showman.png" alt="profile">
+                    <button class="close-overlay-button">NEXT SONG</button>
+                </div>
+                <div class="overlay-right-col">
+                    <h1 class="song-name" id="greatest-showman-song-name">Song Name</h1>
+                    <h2 class="artist-name" id="greatest-showman-artist-name">Artist Name</h2>
+                    <p class="overlay-text">
+                        Okay, <span class="sub" id="greatest-showman-noun1">my friend </span>, you want to cut me in<br>
+                        Well I hate to tell you, but it just won't happen<br>
+                        So thanks, but no. I think I'm <span class="sub" id="greatest-showman-adj1">good</span> to go<br>
+                        'Cause I quite enjoy the <span class="sub" id="greatest-showman-noun3">life</span> you say I'm trapped in<br>
+                        Now I admire you, and that whole show you do<br>
+                        You're onto something, really it's something<br>
+                        But I <span class="sub" id="greatest-showman-verb1">live</span> among the swells, <br>
+                        we don't pick up <span class="sub" id="greatest-showman-noun2">peanut shells</span><br>
+                        I'll have to leave that up to you<br>
+                    </p>
+                </div>
+            </article>
+            
+        </section>
+
+        <section id="wicked" class="overlay hidden">
+            <article>
+                <div class="overlay-left-col">
+                    <div class="img-container"><img class="profile-pic" src="./assets/wicked.png" alt="profile"></div>
+                    <button class="close-overlay-button">NEXT SONG</button>
+                </div>
+                <div class="overlay-right-col">
+                    <h1 class="song-name" id="wicked-song-name">Song Name</h1>
+                    <h2 class="artist-name" id="wicked-artist-name">Artist Name</h2>
+                    <p class="overlay-text">
+                        <span class="sub" id="wicked-adj1">Popular</span>, you're gonna be <span class="sub" id="wicked-adj2">popular</span><br>
+                    I'll teach you the proper poise when you talk to <span class="sub" id="wicked-noun1">boys</span><br>
+                    Little ways to flirt and flounce, ooh!<br>
+                    I'll show you what shoes to wear, how to fix your <span class="sub" id="wicked-noun2">hair</span><br>
+                    Everything that really counts to be<br>
+                    <span class="sub" id="wicked-adj3">Popular</span>, I'll help you be <span class="sub" id="wicked-adj4">popular</span><br>
+                    You'll <span class="sub" id="wicked-verb1">hang</span> with the right cohorts, you'll be good at <span class="sub" id="wicked-noun3">sports</span><br>
+                    Know the slang you've got to know<br>
+                    So let's start 'cause you've got an awfully long way to go<br>
+                    </p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <a href="https://jlo0507.github.io/des157/">portal</a>
+        <a href="https://validator.w3.org/check?uri=https://jlo0507.github.io/des157/studio1/index.html">valid html 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://jlo0507.github.io/des157/studio1/style.css">valid css</a>
+        <a href="mailto:&#104;&#117;&#108;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">contact me</a>
+    </footer>
+</body>
+</html>
