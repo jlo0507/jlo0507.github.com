@@ -4,17 +4,15 @@
 
     const surveyForm = document.querySelector('#survey');
     const madlib = document.querySelector('#result');
-    const closeBtns = document.querySelectorAll('.close-overlay-button');
     let selectedStyle = document.querySelector('#musicStyle');
-    // let overlayWindow = document.getElementById(selectedStyle.value);
     
     // submit button should trigger the overlay window
     surveyForm.addEventListener('submit', function(event){
         event.preventDefault();
+
         const formData = document.querySelectorAll("input[type=text]");
         selectedStyle = document.querySelector('#musicStyle');
 
-        // overlayWindow.className = 'overlay showing';
         processFormData(formData);
     });
 
@@ -53,7 +51,6 @@
             madlib.innerHTML = "";
             overlayWindow.className = 'overlay showing';
         }
-
     }
 
     // substitute the words into the right place
@@ -83,10 +80,4 @@
         console.log("hello");
     });
     
-    for (const eachBtn of closeBtns) {
-        eachBtn.addEventListener('click', function (event) {
-            event.preventDefault();
-            document.getElementById(selectedStyle.value).className = 'overlay hidden';
-        });
-    }
 }());
