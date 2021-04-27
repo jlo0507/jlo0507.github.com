@@ -125,7 +125,7 @@ footer {
 }
 
 footer a, header a {
-    margin-top: 5%;
+    margin-top: 10%;
     padding: 12px 30px;
 }
 
@@ -137,7 +137,7 @@ footer a, header a {
 }
 
 .showing {
-    visibility: showing;
+    visibility: visible;
     opacity: 1;
 }
 
@@ -161,8 +161,8 @@ footer a, header a {
     justify-content: space-evenly;
     background-color: #191414;
     padding: 25px;
-    width: 80vw;
-    height: 40vh;
+    width: 70%;
+    height: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -188,7 +188,7 @@ footer a, header a {
     font-weight: 400;
 }
 
-.song-name, .sub {
+.song-name, .sub, footer a:hover {
     color: #1ED760;
 }
 
