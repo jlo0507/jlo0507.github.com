@@ -6,13 +6,15 @@
     const madlib = document.querySelector('#result');
     const closeBtns = document.querySelectorAll('.close-overlay-button');
     let selectedStyle = document.querySelector('#musicStyle');
-    //let overlayWindow = document.getElementById(selectedStyle.value);
+    // let overlayWindow = document.getElementById(selectedStyle.value);
     
     // submit button should trigger the overlay window
     surveyForm.addEventListener('submit', function(event){
         event.preventDefault();
         const formData = document.querySelectorAll("input[type=text]");
         selectedStyle = document.querySelector('#musicStyle');
+
+        // overlayWindow.className = 'overlay showing';
         processFormData(formData);
     });
 

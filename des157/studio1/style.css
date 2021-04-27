@@ -90,11 +90,6 @@ input:focus, button:focus {
     background-color: #A9B6A5;
 }
 
-label, input{
-    /* margin-bottom: 2%; */
-    /* padding-top: 1em; */
-}
-
 #submitButton{
     margin: 15px;
     top: 40%;
@@ -165,9 +160,9 @@ footer a, header a {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #191414;
-    padding: 20px;
+    padding: 25px;
     width: 80vw;
-    height: 60vh;
+    height: 40vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -180,7 +175,7 @@ footer a, header a {
     font-size: larger;
 }
 
-.overlay-left-col{
+.overlay-left-col, .overlay-right-col{
     display: flex;
     flex-direction: column;
 }
