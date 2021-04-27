@@ -7,7 +7,7 @@
     const closeBtns = document.querySelectorAll('.close-overlay-button');
     let selectedStyle = document.querySelector('#musicStyle');
     document.getElementById(selectedStyle.value).className = 'overlay hidden';
-    
+
     // submit button should trigger the overlay window
     surveyForm.addEventListener('submit', function(event){
         event.preventDefault();
@@ -73,12 +73,7 @@
     }
 
     // triggered when user close the overlay button to create their next song
-    document.querySelector('.close-overlay-button').addEventListener('click', function (event) {
-        event.preventDefault();
-        document.getElementById(selectedStyle.value).className = 'overlay hidden';
-    });
-    
-    // triggered when user wants to hide th 
+    // use a for loop because there's more than one button within the same class
     for (const eachBtn of closeBtns) {
         eachBtn.addEventListener('click', function (event) {
             event.preventDefault();
