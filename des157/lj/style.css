@@ -27,7 +27,7 @@ body {
     overflow-y: scroll;
     text-align:left;
     font-size: 15px;
-    min-width: 300px;
+    width: 300px;
     max-height: 100%;
 }
 
