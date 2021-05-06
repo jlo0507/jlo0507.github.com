@@ -9,121 +9,223 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Learning Journals</title>
+
+    <script src="script.js" async></script>
 </head>
-<body class="colorBG1">
-    <header>
-        <div id="inbox-container">
-            <h1>Articles</h1>
-            <ul>
-           
-                <li id="email3"><a href="#journal_3">Learning Journal 3</a></li>
-                <li id="email2"><a href="#journal_2">Learning Journal 2</a></li>
-                <li id="email1"><a href="#journal_1">Learning Journal 1</a></li>
-            </ul>
-        </div>
-    </header>
+<body>
 
-    <main>
-        <div id="email-container">
-            
-         <article class="journals" id="journal_3">
-            <h2>Learning Journal 3</h2>
-            <p>
-                The article “10 Intriguing Photographs to Teach Close Reading and 
-                Visual Thinking Skills” by Michael Gonchar outlines some examples of 
-                how successful visual work can catch readers attention to and 
-                interact with the readings more closely. <br>
-                <br>
-                <a href="https://www.nurturedigital.com">Nurture Visual</a> is a website in which I see this closely reading would happen. 
-                Upon visiting the site, I soon stopped scrolling because an 
-                interactive illustration on the left hand side caught my attention. <br>
-                <br>
-                I spend a couple minutes hovering around the different sections to 
-                read and interpret the different visual elements the web designers include. 
-                Without leaving where I initially entered on the site, I already have a pretty 
-                good understanding of what the site would be about. This visual alone slows me down 
-                because it sparks my interest to understand what each visual element means. <br>
-                <br>
-                As I (finally) start scrolling, I am encouraged to do so very slowly because 
-                each panel has a different animation. The page automatically scrolls for me 
-                after a certain time frame as well, so I was encouraged to just sit back, relax, 
-                and enjoy reading the text. <br>
-                <br>
-                For these reasons, I would say that this website is one that I would agree to 
-                have successfully accomplished the visual thinking goal Gonchar describes in his article. <br>
-                <br>
-            </p>
-        </article>
-            
-        <article class="journals" id="journal_2">
-            <h2>Learning Journal 2</h2>
-            <p>
-                I read “Best Practices for Modals / Overlays / Dialog Windows” 
-                by Naema Baskanderi and learned many details that I would otherwise 
-                not pay attention to if I were to create a modal. <br>
-                <br>
-                
-                One of the most important points I heard is to 
-                not make the buttons on the modal confusing. <br>
-                <br>
-                
-                Naema gave the example on how if a modal is meant for 
-                canceling an order, a “cancel” button on the modal can be 
-                confusing as the user wouldn’t know whether the button will 
-                actually cancel their order or cancel the process. <br>
-                <br>
-                
-                It’s funny to hear Naema point out these mistakes a web designer can make.<br>
-                <br> 
-                
-                I can recall how I, as a user, had also experienced something similar 
-                that frustrated me. <br>
-                <br>
-                
-                The article by Naema made me realize that there are 
-                so many things that could make a modal useful but also unhelpful. <br>
-                <br>
+    <!-- the divs for the containers -->
+    <div id="horizontal-container">
 
-            </p>
-        </article>
+        <!-- the header column  -->
+        <section class="columns" id="header-column">
+            <header>
+                <h1>learning journal</h1>
+                <h2>jessica lo</h2>
+            </header>
+        </section>
 
-        <article class="journals" id="journal_1">
-            <h2>Learning Journal 1</h2>
-            <p>
-                I read the article “Best practices for form design” 
-                by Salim Ansari and learned many new things about 
-                what design pattern practices to make an application 
-                more user-friendly.<br>
-                <br>
-                The most important thing to note is that 
-                users can get lost fairly easily 
-                if the application is confusing or complicated to navigate.<br>
-                <br>
-                To keep users’ attention, Ansari gave many good practices on
-                how to minimize the work users have to do and provide as much
-                clarity in terms of what the users are expected to do. <br>
-                <br>
-                Doing so, usability, accessibility, and readability would improve 
-                and users are more likely to complete the form they are given! <br>
-                <br>
-                I personally love the typeform web form format.
-                An example can be found <a href="https://form.typeform.com/to/MvryfMWF">here</a>,
-                which is the Lovelace Hack sign up form. <br>
-                <br>
-                The form looks simple with step by step fields to fill in. 
-                It also lets user knows how many questions are left and 
-                keyboard shortcuts to make typing easier.<br>
-                
-            </p>
-        </article>
+        <!-- the second column (newest article)  -->
+
+        <section class="columns" id="article4-column">
+            <div id="article4-container">
+                <section id="article4-title">
+                    <time datetime="2021-05-06">may 6, 2021</time>
+                  <br>
+                  <h2>
+                    Visual <br>
+                    Thinking <br>
+                    Analysis<br>
+                  </h2>
+                </section>
+
+                <article id="article4" class="hidden">
+                    <img src="images/me.png" alt="gudetama">
+                    <figcaption> Jessica Lo, 2021</figcaption>
+                    <br>
+                    This image is a pair of socks I owned that I really love. 
+                    The character printed on the socks is called Gudetama - 
+                    a Japanese character published by Sanrio, which is the 
+                    same company under which Hello Kitty was produced. <br>
+                    <br>
+                    The interesting aspect of this image is the extremely 
+                    close zoom in. Without careful observation to see 
+                    the fabric and texture, I believe it would be difficult 
+                    to tell that this is a zoomed in picture of a pair of socks. <br>
+                    <br>
+                    Anyone who doesn’t know about Gudetama would also not be aware 
+                    of the character. Although not obviously seen from this image, 
+                    I really cherish this pair of socks because they were a gift 
+                    from a friend who knows my obsession with Gudetama. <br>
+                    <br>
+                    It’s not so much the socks themselves, but the heart of that 
+                    friend that remembered what I like and gave me these socks 
+                    that really made this item significant to me.<br>
+                    <br>
+
+                    <br>
+                    <img src="images/jean_img.jpeg" alt="flytrap">
+                    <figcaption> Jean Pagaduan, 2021</figcaption>
+                    <br>
+                    The image depicts a Venus flytrap planted in a bottle with water. 
+                    The idea is very interesting because I’ve never seen this type of plant 
+                    in water and in a closed container. <br>
+                    <br>
+                    My first question was: how does the plant trap insects while it’s inside 
+                    that closed space? <br>
+                    <br>
+                    The next question I had was: why is it in the water instead of being potted?<br>
+                    <br>
+                    Regardless of my concern for the plant’s well-being to survive in water, 
+                    I do see that it is doing well. I have no doubt that the owner is surely 
+                    taking good care of the plant and knowingly putting the plant in this condition. <br>
+                    <br>
+                    I still find it pretty mysterious that the venus flytrap is being grown 
+                    in the bottle.<br>
+
+
+                </article>
+            </div>
+        </section>
+        
+        <!-- the following columns (older articles)  -->
+        <section class="columns" id="article3-column">
+            <div id="article3-container">
+                <section id="article3-title">
+                    <time datetime="2021-04-27">april 27, 2021</time>
+                  <br>
+                  <h2>
+                      10 <br>
+                      Intriguing Photographs <br>
+                      to Teach Close Reading <br>
+                      and Visual <br>
+                      Thinking <br>Skills<br>
+                  </h2>
+                </section>
+                <article id="article3" class="hidden">
+
+                  The article “10 Intriguing Photographs to Teach Close Reading and
+                  Visual Thinking Skills” by Michael Gonchar outlines some examples of
+                  how successful visual work can catch readers attention to and
+                  interact with the readings more closely. <br>
+                  <br>
+                  <a href="https://www.nurturedigital.com">Nurture Visual</a> is a website in which I see this closely reading would happen.
+                  Upon visiting the site, I soon stopped scrolling because an
+                  interactive illustration on the left hand side caught my attention. <br>
+                  <br>
+                  I spend a couple minutes hovering around the different sections to
+                  read and interpret the different visual elements the web designers include.
+                  Without leaving where I initially entered on the site, I already have a pretty
+                  good understanding of what the site would be about. This visual alone slows me down
+                  because it sparks my interest to understand what each visual element means. <br>
+                  <br>
+                  As I (finally) start scrolling, I am encouraged to do so very slowly because
+                  each panel has a different animation. The page automatically scrolls for me
+                  after a certain time frame as well, so I was encouraged to just sit back, relax,
+                  and enjoy reading the text. <br>
+                  <br>
+                  For these reasons, I would say that this website is one that I would agree to
+                  have successfully accomplished the visual thinking goal Gonchar describes in his article. <br>
+                  <br>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="columns" id="article2-column">
+            <div id="article2-container">
+                <section id="article2-title">
+                    <time datetime="2021-04-20">april 20, 2021</time>
+                    <br>
+                    <h2>
+                        Best <br>
+                        Practices for <br>
+                        Modals / <br>
+                        Overlays / <br>
+                        Dialog Windows<br>
+                    </h2>
+                </section>
+                <article id="article2" class="hidden">
+                    I read “Best Practices for Modals / Overlays / Dialog Windows” 
+                    by Naema Baskanderi and learned many details that I would otherwise 
+                    not pay attention to if I were to create a modal. <br>
+                    <br>
+                    
+                    One of the most important points I heard is to 
+                    not make the buttons on the modal confusing. <br>
+                    <br>
+                    
+                    Naema gave the example on how if a modal is meant for 
+                    canceling an order, a “cancel” button on the modal can be 
+                    confusing as the user wouldn’t know whether the button will 
+                    actually cancel their order or cancel the process. <br>
+                    <br>
+                    
+                    It’s funny to hear Naema point out these mistakes a web designer can make.<br>
+                    <br> 
+                    
+                    I can recall how I, as a user, had also experienced something similar 
+                    that frustrated me. <br>
+                    <br>
+                    
+                    The article by Naema made me realize that there are 
+                    so many things that could make a modal useful but also unhelpful. <br>
+                    <br>
+                </article>
+            </div>
+        </section>
+
+        <section class="columns" id="article1-column">
+            <div id="article1-container">
+                <section id="article1-title">
+                    april 14, 2021<br>
+                    <br>
+                    <h2>
+                        Best <br>
+                        Practices<br>
+                        for<br>
+                        form
+                        design<br>
+                    </h2>
+                </section>
+                <article id="article1" class="hidden">
+                    I read the article “Best practices for form design” 
+                    by Salim Ansari and learned many new things about 
+                    what design pattern practices to make an application 
+                    more user-friendly.<br>
+                    <br>
+                    The most important thing to note is that 
+                    users can get lost fairly easily 
+                    if the application is confusing or complicated to navigate.<br>
+                    <br>
+                    To keep users’ attention, Ansari gave many good practices on
+                    how to minimize the work users have to do and provide as much
+                    clarity in terms of what the users are expected to do. <br>
+                    <br>
+                    Doing so, usability, accessibility, and readability would improve 
+                    and users are more likely to complete the form they are given! <br>
+                    <br>
+                    I personally love the typeform web form format.
+                    An example can be found <a href="https://form.typeform.com/to/MvryfMWF">here</a>,
+                    which is the Lovelace Hack sign up form. <br>
+                    <br>
+                    The form looks simple with step by step fields to fill in. 
+                    It also lets user knows how many questions are left and 
+                    keyboard shortcuts to make typing easier.<br>
+                </article>
+            </div>
+        </section>
+
+        <section class="columns" id="fifth-column">
+        </section>
     </div>
-    </main>
+
     <footer>
-        <a class="footerText" href="https://jlo0507.github.io/des157/">portal</a>
-        <a class="footerText" href="https://validator.w3.org/check?uri=https://jlo0507.github.io/des157/lj/index.html">valid html 5</a>
-        <a class="footerText" href="https://jigsaw.w3.org/css-validator/validator?uri=https://jlo0507.github.io/des157/lj/style.css">valid css</a>
-        <a class="footerText" href="mailto:&#104;&#117;&#108;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">contact me</a>
+        <a href="https://jlo0507.github.io/des157/">portal</a>
+        <a href="https://validator.w3.org/check?uri=https://jlo0507.github.io/des157/lj/index.html">valid html 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://jlo0507.github.io/des157/lj/style.css">valid css</a>
+        <a href="mailto:&#104;&#117;&#108;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">contact me</a>
     </footer>
-    <script src="script.js"></script>
+
 </body>
 </html>

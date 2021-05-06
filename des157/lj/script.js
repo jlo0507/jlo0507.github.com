@@ -1,18 +1,24 @@
 (function(){
     'use strict';
 
-    let pageTop;
-    const bodyTag = document.querySelector('body');
-    window.addEventListener('scroll', function(){
-        pageTop = window.pageYOffset;
-        console.log(pageTop);
-        switch(true){
-            case pageTop < 500: bodyTag.className="colorBG1"; break;
-            case pageTop < 1000: bodyTag.className="colorBG2"; break;
-            case pageTop < 1500: bodyTag.className="colorBG3"; break;
-            default: bodyTag.class="colorBG4";
-        }
-    });
-
+        for (let i = 1; i <= 4; i++) {
+            document.getElementById(`article${i}-column`).addEventListener("mouseover", function(){
+                hoverOn(`article${i}`);
+            });
     
+            document.getElementById(`article${i}-column`).addEventListener("mouseout", function(){
+                hoverOut(`article${i}`);
+            });
+        };        
+
+    function hoverOn(i){
+        document.getElementById(i).classList.remove("hidden");
+        document.getElementById(`${i}-title`).classList.add("hidden");
+    }
+
+    function hoverOut(i){
+        document.getElementById(i).classList.add("hidden");
+        document.getElementById(`${i}-title`).classList.remove("hidden");
+    }
+
 }());
