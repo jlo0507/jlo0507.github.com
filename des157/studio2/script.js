@@ -27,7 +27,7 @@
         
         // For every 2 seconds, the carousel function is called
         // and the slide_ind keeps iterating to display all the images
-        setTimeout(carousel(x), 2000); 
+        setTimeout(carousel(ind), 2000); 
       }
 
     // Take care of the Scrolling Effect here: //
