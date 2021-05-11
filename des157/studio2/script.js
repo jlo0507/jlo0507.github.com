@@ -10,6 +10,10 @@
     // x is the week's index (4 weeks total)
     for (let x = 1; x <= 4; x++){
         carousel(x);
+        
+        // For every 2 seconds, the carousel function is called
+        // and the slide_ind keeps iterating to display all the images
+        setTimeout(carousel, 2000); 
     }
 
     function carousel(ind) {
@@ -24,9 +28,6 @@
                 slide_ind = 1;
             }   
             slides[slide_ind-1].style.display = "block";
-              // For every 2 seconds, the carousel function is called
-              // and the slide_ind keeps iterating to display all the images
-            setTimeout(carousel, 2000); 
       }
 
     // Take care of the Scrolling Effect here: //
