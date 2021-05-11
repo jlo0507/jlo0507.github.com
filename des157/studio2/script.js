@@ -3,17 +3,15 @@
 
     // Take care of the Automatic SlideShow Effect here: //
     let slide_ind = 0;
+    carousel();
     
-    // get every week's className to perform automatic slideshow
-    // I hard-coded in the "3" here because I know there's exactly 4 weeks
-    // x is the week's index (4 weeks total)
-    for (let x = 1; x <= 4; x++){
-        carousel(x);
-        
-    }
 
-    function carousel(ind) {
-            let slides = document.getElementsByClassName(`week${ind}slides`);
+    function carousel() {
+        // get every week's className to perform automatic slideshow
+        // I hard-coded in the "3" here because I know there's exactly 4 weeks
+        // x is the week's index (4 weeks total)
+        for (let x = 1; x <= 4; x++){
+            let slides = document.getElementsByClassName(`week${x}slides`);
             for (let i = 0; i < slides.length; i++) {
                 // hide all the images initially
                 slides[i].style.display = "none";  
@@ -25,9 +23,10 @@
             }   
             slides[slide_ind-1].style.display = "block";
         
-        // For every 2 seconds, the carousel function is called
-        // and the slide_ind keeps iterating to display all the images
-        setTimeout(carousel(ind), 2000); 
+            // For every 2 seconds, the carousel function is called
+            // and the slide_ind keeps iterating to display all the images
+            setTimeout(carousel, 2000); 
+        }       
       }
 
     // Take care of the Scrolling Effect here: //
