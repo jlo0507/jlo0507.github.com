@@ -1,8 +1,6 @@
 (function () {
     'use strict';
 
-    // start your script here...
-
     // Take care of the Automatic SlideShow Effect here: //
 
     let slide_ind = 0;
