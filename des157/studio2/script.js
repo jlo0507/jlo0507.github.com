@@ -2,7 +2,6 @@
     'use strict';
 
     // Take care of the Automatic SlideShow Effect here: //
-
     let slide_ind = 0;
     
     // get every week's className to perform automatic slideshow
