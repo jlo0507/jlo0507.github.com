@@ -3,9 +3,9 @@
 
     // Take care of the Automatic SlideShow Effect here: //
     let slide_ind = 0;
+    
     carousel();
     
-
     function carousel() {
         // get every week's className to perform automatic slideshow
         // I hard-coded in the "3" here because I know there's exactly 4 weeks
