@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-        for (let i = 1; i <= 4; i++) {
+        for (let i = 1; i <= 5; i++) {
             document.getElementById(`article${i}-column`).addEventListener("mouseover", function(){
                 hoverOn(`article${i}`);
             });
