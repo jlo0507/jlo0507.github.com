@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Game On!</title>
+
+    <script src="script.js" async></script>
+</head>
+<body>
+    <header id="gameButtons">
+        <h1>Game of PIG</h1>
+        <button id="quitgame">QUIT</button>
+        <!-- <button id="gamerule">RULE</button> -->
+    </header>
+    <p id="rule_list" class="showing">
+        1. Two players taking turn rolling the dice <br>
+        2. After each roll, the player decides either to roll again or to pass <br>
+        3. If either die is a “one”, it’s automotically the opponent’s turn <br>
+        4. If both dice are “one” (snake eyes), player’s score is zeroed out <br>
+        5. The first player to get 30 points or higher wins <br>
+    </p>
+
+    <main>
+        <!-- The container with the whole game board -->
+        <div id="game">
+            <h2 id="greeting">start with a random player:</h2>
+            <p id="extraNotes"></p>
+            <div id="dice_imgs">
+                <!-- <img src="images/die1.png">
+                <img src="images/die2.png"> -->
+            </div>
+            <!-- Actions: buttons that control the game (roll dice, pass turn, etc) -->
+            <div id="actions">
+                <button id="roll">PLAY</button>
+                <!-- <button id="pass">Pass Turn</button>
+                <button id="rollagain">Roll Dice</button> -->
+            </div>
+        </div>
+    
+        <!-- Scoreboard -->
+        <div id="score">
+            <br>
+            <h2> Score Board</h2>
+            <h3 id="totalPoints">Player 1:  0  Points <br><br>
+                Player 2:  0  Points
+            </h3>
+        </div>
+    
+
+    </main>
+    <hr id="divider">
+    <footer>
+        <a href="https://jlo0507.github.io/des157/studio3/sources.html">sources</a>
+        <a href="https://validator.w3.org/check?uri=https://jlo0507.github.io/des157/studio3/index.html">valid html 5</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://jlo0507.github.io/des157/studio3/styles.css">valid css</a>
+        <a href="mailto:&#104;&#117;&#108;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">contact me</a>
+    </footer>
+</body>
+</html>

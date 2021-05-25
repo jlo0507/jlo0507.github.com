@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #ACD8AA;
+    color: #283618;
+    height: 1366px;
+    width: 768px;
+}
+
+#gameButtons{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#rule_list{
+    width: 60%;
+    line-height: 1.5em;
+    padding: 1em;
+
+    border-style: solid;
+    border-radius: 1em;
+    border-color: #283618;
+    background-color: beige;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+    padding: 1em;
+    height: 350px;
+}
+
+
+#dice_imgs{
+    height: 130px;
+    width: 300px;
+    padding: 1em;
+}
+
+#score{
+    height: 80%;
+    padding: 1em;
+    line-height: 1.5em;
+    border-radius: 1em;
+    background-color: #97D2FB;
+}
+
+#divider{
+    margin-top: 1em;
+    width: 100%;
+    border: 3px solid #88b356;
+    border-radius: 5px;
+}
+
+button{
+    margin: 20px;
+    background-color: #FFE600;
+    padding: 10px 8px;
+    border-radius: 0.5em;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: #283618;
+}
+
+a:hover{
+    color: #EE9CA7;
+}
