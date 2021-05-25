@@ -110,6 +110,8 @@
         if (gameData.score[gameData.index] > gameData.gameEnd){
             score.innerHTML = `<h2> ${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
             actionArea.innerHTML = "";
+            diceImages.innerHTML = "";
+            greeting.innerHTML = "Thanks For Playing!";
             actionArea.innerHTML += `<button id="startover">Start a New Game!</button>`;
             // a button that reloads the page and start the game fresh again
             document.getElementById('startover').addEventListener("click", function(){
