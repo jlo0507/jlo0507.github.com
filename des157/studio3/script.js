@@ -17,7 +17,10 @@
     quitGameButton.addEventListener("click", function(){
         location.reload();
     });
-    
+
+    // sound effect audio
+    const rollingSound = new Audio('media/aerosol+spray+shake.mp3');
+    const passTurnSound = new Audio('media/Switch3.mp3');
 
     // store all relevant game data in array
     var gameData = {
@@ -44,6 +47,7 @@
         diceImages.innerHTML = "";
         actionArea.innerHTML = '<button id="roll">Roll Dice</button>';
         document.getElementById('roll').addEventListener('click', function(){
+            rollingSound.play();
             console.log("roll the dice!");            
             throwDice();                
         });
@@ -86,9 +90,11 @@
             // update Score
             gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
             document.getElementById('roll').addEventListener('click', function(){
+                rollingSound.play();
                 throwDice();
             });
             document.getElementById('pass').addEventListener('click', function(){
+                passTurnSound.play();
                 //clear the images section when switching to another player
                 diceImages.innerHTML = "";
                 //swap the current player when the turn is switched
