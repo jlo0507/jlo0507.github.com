@@ -7,12 +7,16 @@ body{
     width: 1366px;
 }
 
-
 .gallery-containers {
     display: flex;
     flex-direction: row;
     height:768px;
     width: 1366px;
+}
+
+#initial{
+    background-image: url("images/1_img.png");
+
 }
 
 hr{
