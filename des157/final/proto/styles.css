@@ -14,11 +14,6 @@ body{
     width: 1366px;
 }
 
-#initial{
-    background-image: url("images/1_img.png");
-
-}
-
 hr{
     border: 1px solid #2B3423;
     width: 342px;
@@ -28,11 +23,11 @@ hr{
 #slide1{
     margin: 10px 2%;
     padding-top: 10%;
-
 }
 
 p{
     font-size: 43px;
+    padding-left: 10%;
 }
 
 .slideshow-container{
