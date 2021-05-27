@@ -2,7 +2,7 @@ body{
     font-family: 'Roboto Slab', serif;
     display: flex;
     flex-direction: column;
-    background-color: #BCD9A3;
+    background-color: #7D926B;
     height: 3072px; /* 768px per screen * 4 screens = 3072px total height */
     width: 1366px;
 }
