@@ -2,7 +2,7 @@
     'use strict';
     console.log("reading js");
 
-    alert("Hello there! Please note ");
+    alert("Hello there! Please note that (1) Make sure your viewport is 1366x768px for best experience, (2) Scroll vertically to see each image and a gallery of their stories, (3) There are some placeholder text, so please just enjoy the UI and UX of this page! Thanks :D");
 
 
     /* switch pictures in slideshow */
