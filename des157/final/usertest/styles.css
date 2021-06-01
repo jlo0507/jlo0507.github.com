@@ -1,0 +1,99 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #7D926B;
+    height: 3840px; /* 768px per screen * 5 screens = 3840px total height */
+    width: 1366px;
+}
+
+.gallery-containers {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+}
+
+hr{
+    border: 1px solid #2B3423;
+    width: 342px;
+    margin: 0 0;
+}
+
+#slide1{
+    margin: 10px 2%;
+    padding-top: 10%;
+}
+
+p{
+    font-size: 43px;
+    padding-left: 10%;
+}
+
+.slideshow-container1,
+.slideshow-container2 {
+    position: relative;
+    margin: auto;
+}
+
+.slideshow{
+    /* hide the images by default*/
+    display: none;
+}
+
+.slide-imgs{
+    left: 342px; /* every img is 1024*768, so starting pt is 1366-1024=342px */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    transition: 0.6s ease;
+    border-radius: 0 15px 15px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#ending{
+    background-image: url("images/end-page.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 768px;
+    width: 1366px;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1em;
+    bottom: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: #343E3D;
+}
+
+a:hover{
+    color: #E9EDC9;
+}
