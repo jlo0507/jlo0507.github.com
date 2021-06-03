@@ -41,7 +41,11 @@ h1 {
 }
 
 .slideshow-container1,
-.slideshow-container2 {
+.slideshow-container2,
+.slideshow-container3,
+.slideshow-container4,
+.slideshow-container5,
+.slideshow-container6 {
     position: relative;
     margin: auto;
 }
