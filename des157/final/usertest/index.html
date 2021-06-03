@@ -11,91 +11,108 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
-    <title>Final Project Prototype</title>
+    <title>Final Project User Test</title>
 
     <script src="script.js" async></script>
 </head>
-<body>
-    <!-- the intro pages -->
-    <div id="inital" class="gallery-containers">
-        <img src="images/home-page.png" alt="home">
-    </div>
     
-    <div id="story" class="gallery-containers">
-        <img src="images/backstory.png" alt="story">
-    </div>
 
-    <!-- the actual gallery -->
-    <div class="gallery-containers">
-        <section class="gallery">
-            <!-- nav bar with date and index (left hand side) -->
-            <div id="slide1_navbar">
-                <p>01<strong>01</strong>2021</p>
-                <hr>
-                <p id="content1-title">#1</p>
+<body>
+    <section id="inital" class="gallery-containers">
+        <img src="images/home-page.png" alt="home">
+        <div class="arrow-down" id="first-page"></div>
+    </section>
+
+    <section id="backstory">
+        <article>
+            <p><br>
+                hello,<br>
+                welcome to my gallery!<br>
+                <br>
+                i decided to go on a <a href="https://jlo0507.github.io/des157/">whole30</a> diet in january 2021
+                to find potential allergies my body might have -
+                but also to have fun while eating healthy food!<br>
+                <br>
+                i took pictures of my every meal... yummy or not,
+                i am pretty content with my work as a classic
+                “eat to live”...<br>
+                <br><br>
+                although i didn’t find anything i was allergic to
+                (yay milk! yay cheese!), i don’t regret eating on
+                a whole30 diet (but i do think that it’s a bit
+                expensive to do...)<br>
+                <br>
+                and that’s really enough talking from me... so
+                off you go to see some of the highlights of
+                my whole30 journey!<br>
+                <br>
+                - jessica :>
+            </p>
+        </article>
+
+        <div class="arrow-down"></div>
+    </section>
+
+    <section id="wk1page1" class="gallery">
+        <div class="slide_navbar">
+            <p>01.07.2021</p>
+            <hr>
+            <p id="content1-title">#1</p>
+        </div>
+        <div class="slideshow-container1">
+            <div class="slide1 slideshow">
+                <img src="images/1_img.png" alt="slideshow1_img" class="slide-imgs">
             </div>
-            <!-- image, "behind the scene", and recipe (right hand side) -->
 
-            <div class="slides">
-            <div class="slideshow-container1">
-                <div class="slide1 slideshow">
-                    <img src="images/1_img.png" alt="slideshow1_img" class="slide-imgs">
+            <div class="slide1 slideshow">
+                <img src="images/1_bts.png" alt="slideshow1_bts" class="slide-imgs">
+            </div>
+
+            <div class="slide1 slideshow">
+                <img src="images/1_recipe.png" alt="slideshow1_recipe" class="slide-imgs">
+            </div>
+
+            <!-- previous and next buttons -->
+
+            <a class="prev slidebuttons hidden" id="prev1">&#10094;</a>
+            <a class="next slidebuttons showing" id="next1">&#10095;</a>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="slide_navbar">
+                <p>01.15.2021</p>
+                <hr>
+                <p id="content2-title">#1</p>
+        </div>
+            <div class="slideshow-container2">
+                <div class="slide2 slideshow">
+                    <img src="images/2_img.png" alt="slideshow2_img" class="slide-imgs">
                 </div>
 
-                <div class="slide1 slideshow">
-                    <img src="images/1_bts.png" alt="slideshow1_bts" class="slide-imgs">
+                <div class="slide2 slideshow">
+                    <img src="images/2_bts.png" alt="slideshow2_bts" class="slide-imgs">
                 </div>
                 
-                <div class="slide1 slideshow">
-                    <img src="images/1_recipe.png" alt="slideshow1_recipe" class="slide-imgs">
+                <div class="slide2 slideshow">
+                    <img src="images/2_recipe.png" alt="slideshow2_recipe" class="slide-imgs">
                 </div>
 
                 <!-- previous and next buttons -->
-                <a class="prev" id="prev1">&#10094;</a>
-                <a class="next" id="next1">&#10095;</a>
+                <a class="prev slidebuttons hidden" id="prev2">&#10094;</a>
+                <a class="next slidebuttons showing" id="next2">&#10095;</a>
             </div>
-            </div>
-        </section>
-        
-        <section class="gallery">
-            <div id="slide2_navbar">
-                    <p>01<strong>15</strong>2021</p>
-                    <hr>
-                    <p id="content2-title">#1</p>
-            </div>
-            <div class="slides">
-                <div class="slideshow-container2">
-                    <div class="slide2 slideshow">
-                        <img src="images/2_img.png" alt="slideshow2_img" class="slide-imgs">
-                    </div>
-    
-                    <div class="slide2 slideshow">
-                        <img src="images/2_bts.png" alt="slideshow2_bts" class="slide-imgs">
-                    </div>
-                    
-                    <div class="slide2 slideshow">
-                        <img src="images/2_recipe.png" alt="slideshow2_recipe" class="slide-imgs">
-                    </div>
-    
-                    <!-- previous and next buttons -->
-                    <a class="prev" id="prev2">&#10094;</a>
-                    <a class="next" id="next2">&#10095;</a>
-                </div>
-    
-            </div>
-        </section>
 
-        
-    </div>
-
-
-    <div id="ending">
-    </div>
-    <footer>
-        <a href="https://jlo0507.github.io/des157/">my portal</a>
-        <a href="https://validator.w3.org/check?uri=https://jlo0507.github.io/des157/final/usertest/index.html">valid html</a>
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://jlo0507.github.io/des157/final/usertest/styles.css">valid css</a>
-        <a href="mailto:&#104;&#117;&#108;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">contact me</a>
-    </footer>
+    </section>
+    <section>
+        <img src="images/end-page.png" alt="home">
+        <footer>
+            <a href="https://jlo0507.github.io/des157/">my portal</a>
+            <a href="https://validator.w3.org/check?uri=https://jlo0507.github.io/des157/final/usertest/index.html">valid html</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://jlo0507.github.io/des157/final/usertest/styles.css">valid css</a>
+            <a href="mailto:&#104;&#117;&#108;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">contact me</a>
+        </footer>
+    </section>
 </body>
+
 </html>
