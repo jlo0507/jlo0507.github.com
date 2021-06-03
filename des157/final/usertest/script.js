@@ -74,7 +74,7 @@
     function changeImageTitle(slidesArrayInd, slideViewInd){
         /* if slideViewInd is 0, we're viewing the image itself */
         if ( slideViewInd == 0){
-            document.getElementById(`content${slidesArrayInd+1}-title`).innerHTML = `#${slideViewInd + 1}`;
+            document.getElementById(`content${slidesArrayInd+1}-title`).innerHTML = `#${slidesArrayInd+1}`;
         } 
         /* if slideViewInd is 1, we're viewing the image's behind the scene */
         else if (slideViewInd == 1){
