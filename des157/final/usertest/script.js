@@ -1,16 +1,31 @@
 (function(){
     'use strict';
     console.log("reading js");
-
     alert("Hello there! Please note that (1) Make sure your viewport is 1366x768px for best experience, (2) Scroll vertically to see each image and a gallery of their stories, (3) There are some placeholder text, so please just enjoy the UI and UX of this page! Thanks :D");
+
+    window.addEventListener('load', function(event){
+        event.preventDefault();
+    });
+
+    // Move to the next page when arrow is clicked
+    document.getElementById("first-page").addEventListener('click', function (event) {
+        event.preventDefault();
+        window.location.href = '#backstory';
+    });
+
+    document.getElementById("backstory").addEventListener('click', function (event) {
+        event.preventDefault();
+        window.location.href = '#wk1page1';
+    });
 
 
     /* switch pictures in slideshow */
     var slideIndex = [1, 1];
 
     for(var i = 0; i < slideIndex.length; i++){
-        console.log(`what slide index content${slideIndex[i]}`);
         showSlides(i, slideIndex[i]);
+        showButton('prev', i+1, false);
+        showButton('next', i+1, true);
     }
     
     /* enable prev/next button to switch slides */
@@ -28,47 +43,37 @@
         showSlides(1, slideIndex[1] += 1);
     });
 
-   /*  document.getElementById("prev3").addEventListener("click", function(){
-        showSlides(2, slideIndex[2] -= 1);
-    });
-    document.getElementById("next3").addEventListener("click", function(){
-        showSlides(2, slideIndex[2] += 1);
-    });
- */
-
-    /* my attempt to simplify the codes for buttons, but failed */
-   /*  var prevButtons = document.getElementsByClassName("prev");
-    for(var i = 0; i < prevButtons.length; i++){
-        prevButtons[i].addEventListener("click", function(){
-            showSlides(i, slideIndex[i] -= 1);
-        });
-    }
-
-    var nextButtons = document.getElementsByClassName("next");
-    for(var i = 0; i < nextButtons.length; i++){
-        nextButtons[i].addEventListener("click", function(){
-            console.log("The next button pressed ");
-            console.log(`${slideIndex[i] += 1}`);
-            showSlides(i, slideIndex[i] += 1);
-        });
-    } */
-
     function showSlides(slidesArrayInd, n) {
         var slides = document.getElementsByClassName(`slide${slidesArrayInd+1}`);
-        console.log("The array of slides number: ");
-        console.log(slideIndex[slidesArrayInd]);
-        console.log(`What's the slide view: ${n}`);
-        if (n > slides.length) {slideIndex[slidesArrayInd] = 1}
-        if (n < 1) {slideIndex[slidesArrayInd] = slides.length}
+        if (n > slides.length) {
+            slideIndex[slidesArrayInd] = 1;
+        }
+        if (n < 1) {
+            slideIndex[slidesArrayInd] = slides.length;
+        }
+
+        if (n == slides.length){
+            showButton('next', slidesArrayInd+1, false);
+            showButton('prev', slidesArrayInd+1, true);
+        } else if (n == 1){
+            showButton('next', slidesArrayInd+1, true);
+            showButton('prev', slidesArrayInd+1, false);
+        } else {
+            showButton('next', slidesArrayInd+1, true);
+            showButton('prev', slidesArrayInd+1, true);
+        }
+        
         for (var i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
+
         console.log(`what is current slide: slide${slidesArrayInd}`);
         console.log(`what is current view: ${slideIndex[slidesArrayInd]}`);
+        // display the current slide
         slides[slideIndex[slidesArrayInd] - 1].style.display = "block";
         changeImageTitle(slidesArrayInd, slideIndex[slidesArrayInd] - 1);
-
     }
+
 
     function changeImageTitle(slidesArrayInd, slideViewInd){
         /* if slideViewInd is 0, we're viewing the image itself */
@@ -84,6 +89,16 @@
             document.getElementById(`content${slidesArrayInd+1}-title`).innerHTML = "recipe";
         }
     }
+
+    function showButton(type, ind, show){
+        console.log(`what is ${type}${ind}`);
+        if (show){
+            document.getElementById(`${type}${ind}`).className = `${type} slidebuttons showing`;
+        } else {
+            document.getElementById(`${type}${ind}`).className = `${type} slidebuttons hidden`;
+        }
+    }
+
 
 
 }());
