@@ -3,10 +3,6 @@
     console.log("reading js");
     alert("Hello there! Please note that (1) Make sure your viewport is 1366x768px for best experience, (2) Scroll vertically to see each image and then a horizonta gallery of their stories, (3) There are some placeholder text, so please just enjoy the UI and UX of this page! Thanks :D");
 
-    window.addEventListener('load', function(event){
-        event.preventDefault();
-    });
-
     // Move to the next page when arrow is clicked
     document.getElementById("first-page").addEventListener('click', function (event) {
         event.preventDefault();
