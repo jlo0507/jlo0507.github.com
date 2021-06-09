@@ -67,6 +67,11 @@ nav .selected {
     margin: auto;
 }
 
+h1 img{
+    max-width: 290px;
+    max-height: 150px;
+}
+
 h2{
     color: #47639a;
 }
